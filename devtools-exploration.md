@@ -37,4 +37,3 @@ a:hover {
 
 ### Screenshot
 ![DevTools Elements Panel](./images/github-devtools.png)
-
