@@ -6,7 +6,7 @@ Week 1 Web Foundations portfolio project
 
 ## 🌐 Live Demo
 
-[https://hamisi254iyf.github.io/iyf-s12-week-01-Hamisi254IYF/](https://hamisi254iyf.github.io/iyf-s12-week-01-Hamisi254IYF/)
+[https://Hamisi254iyf.github.io/iyf-s12-week-01-Hamisi254IYF/](https://hamisi254iyf.github.io/iyf-s12-week-01-Hamisi254IYF/)
 
 ## 📁 Project Files
 
