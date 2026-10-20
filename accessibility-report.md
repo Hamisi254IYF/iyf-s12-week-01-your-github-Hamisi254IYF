@@ -2,7 +2,7 @@
 
 **Page audited:** `index.html`
 **Tools used:** Chrome Lighthouse, WAVE Web Accessibility Tool
-**Date:** October 2026
+**Date:** 19th September 2026
 
 ---
 
