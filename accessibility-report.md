@@ -58,10 +58,10 @@
 ## Screenshots
 
 ### Lighthouse Accessibility Score
-![Lighthouse score](./images/lighthouse.png)
+![Lighthouse score](images/lighthouse.png)
 
 ### WAVE Results
-![WAVE results](./images/wave.png)
+![WAVE results](images/wave.png)
 
 ---
 
