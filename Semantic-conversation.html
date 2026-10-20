@@ -30,7 +30,6 @@
             flex-direction: column;
         }
 
-        /* ---------- Header ---------- */
         header {
             background: rgba(15, 23, 42, 0.9);
             backdrop-filter: blur(8px);
@@ -67,7 +66,6 @@
             font-family: monospace;
         }
 
-        /* ---------- Nav ---------- */
         nav ul {
             list-style: none;
             display: flex;
@@ -83,7 +81,6 @@
         }
         nav a:hover { color: var(--accent); }
 
-        /* ---------- Main Layout ---------- */
         main {
             max-width: 1100px;
             margin: 0 auto;
@@ -95,7 +92,6 @@
             width: 100%;
         }
 
-        /* ---------- Article ---------- */
         article {
             background: var(--card);
             border: 1px solid var(--border);
@@ -134,7 +130,6 @@
         article ul li { margin-bottom: 0.5rem; }
         article ul li strong { color: var(--text); }
 
-        /* ---------- Aside ---------- */
         aside {
             background: var(--card);
             border: 1px solid var(--border);
@@ -180,7 +175,6 @@
         }
         aside .read-more:hover { color: var(--accent-2); border-color: var(--accent-2); }
 
-        /* ---------- Footer ---------- */
         footer {
             background: var(--primary);
             color: var(--muted);
@@ -192,7 +186,6 @@
         footer p { margin: 0; }
         footer a { color: var(--accent); text-decoration: none; }
 
-        /* ---------- Responsive ---------- */
         @media (max-width: 800px) {
             main { grid-template-columns: 1fr; }
             aside { position: static; }
@@ -205,7 +198,6 @@
 </head>
 <body>
 
-    <!-- ============ HEADER ============ -->
     <header>
         <div class="logo">
             <span class="logo-mark">&lt;/&gt;</span>
@@ -221,7 +213,6 @@
         </nav>
     </header>
 
-    <!-- ============ MAIN + ASIDE ============ -->
     <main>
 
         <article>
@@ -282,7 +273,6 @@
 
     </main>
 
-    <!-- ============ FOOTER ============ -->
     <footer>
         <p>
             &copy; 2026 BlankSlate Blueprint Core ·
