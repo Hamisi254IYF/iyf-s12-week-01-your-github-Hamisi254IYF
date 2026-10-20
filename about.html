@@ -1,1 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us — Radar Business Enterprise</title>
+    <meta name="description" content="Radar Business Enterprise — your trusted partner for business solutions, procurement, and consultancy. Learn about our mission, values, and team.">
+    <style>
+        :root {
+            --primary: #0b3d91;
+            --accent: #ff6b35;
+            --text: #1f2937;
+            --muted: #6b7280;
+            --bg: #f9fafb;
+            --card: #ffffff;
+            --border: #e5e7eb;
+        }
 
+        * { box-sizing: border-box; }
+
+        body {
+            font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+            margin: 0;
+            color: var(--text);
+            background: var(--bg);
+            line-height: 1.6;
+        }
+
+        /* ---------- Header ---------- */
+        header.site-header {
+            background: var(--primary);
+            color: #fff;
+            padding: 1rem 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .brand {
+            font-size: 1.4rem;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+        .brand span { color: var(--accent); }
+        nav.main-nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+            margin: 0;
+            padding: 0;
+        }
+        nav.main-nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        nav.main-nav a:hover { color: var(--accent); }
+
+        /* ---------- Hero ---------- */
+        .hero {
+            background: linear-gradient(135deg, var(--primary), #1e40af);
+            color: #fff;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            margin: 0 0 0.75rem;
+        }
+        .hero p {
+            font-size: 1.15rem;
+            max-width: 720px;
+            margin: 0 auto;
+            opacity: 0.95;
+        }
+
+        /* ---------- Main Content ---------- */
+        main {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 3rem 1.5rem;
+        }
+        section { margin-bottom: 3rem; }
+        section h2 {
+            font-size: 1.75rem;
+            color: var(--primary);
+            border-bottom: 3px solid var(--accent);
+            display: inline-block;
+            padding-bottom: 0.3rem;
+            margin-bottom: 1.25rem;
+        }
+        section p { margin: 0 0 1rem; }
+
+        /* ---------- Values Grid ---------- */
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 1.5rem;
+        }
+        .value-card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 1.5rem;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .value-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+        }
+        .value-card h3 {
+            color: var(--primary);
+            margin-top: 0;
+            margin-bottom: 0.5rem;
+        }
+
+        /* ---------- Team ---------- */
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.5rem;
+        }
+        .team-card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 1.5rem;
+            text-align: center;
+        }
+        .team-card img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border: 3px solid var(--accent);
+            margin-bottom: 0.75rem;
+        }
+        .team-card h3 { margin: 0.25rem 0; font-size: 1.1rem; }
+        .team-card .role { color: var(--muted); font-size: 0.9rem; }
+
+        /* ---------- CTA ---------- */
+        .cta {
+            background: var(--primary);
+            color: #fff;
+            text-align: center;
+            padding: 2.5rem 1.5rem;
+            border-radius: 12px;
+        }
+        .cta h2 { color: #fff; border: none; }
+        .cta a.button {
+            display: inline-block;
+            margin-top: 1rem;
+            background: var(--accent);
+            color: #fff;
+            padding: 0.75rem 1.75rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background 0.2s;
+        }
+        .cta a.button:hover { background: #e85a28; }
+
+        /* ---------- Footer ---------- */
+        footer.site-footer {
+            background: #111827;
+            color: #d1d5db;
+            text-align: center;
+            padding: 1.5rem;
+            font-size: 0.9rem;
+        }
+        footer.site-footer a { color: var(--accent); text-decoration: none; }
+
+        /* ---------- Responsive ---------- */
+        @media (max-width: 640px) {
+            .hero h1 { font-size: 1.9rem; }
+            header.site-header { flex-direction: column; align-items: flex-start; }
+            nav.main-nav ul { flex-wrap: wrap; gap: 1rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ============ HEADER ============ -->
+    <header class="site-header">
+        <div class="brand">Radar <span>Business</span> Enterprise</div>
+        <nav class="main-nav" aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+        <h1>About Radar Business Enterprise</h1>
+        <p>
+            We connect ambitious businesses with the solutions, supply chains,
+            and strategy they need to grow with confidence.
+        </p>
+    </section>
+
+    <!-- ============ MAIN ============ -->
+    <main>
+
+        <!-- Our Story -->
+        <section>
+            <h2>Our Story</h2>
+            <p>
+                Radar Business Enterprise was founded with a simple belief:
+                that every business — from the smallest startup to the largest
+                enterprise — deserves clear, honest, and practical support to
+                reach its full potential.
+            </p>
+            <p>
+                Over the years, we have grown into a trusted partner for
+                procurement, business consultancy, and general supplies. Our
+                team combines local knowledge with global standards, delivering
+                results that are measurable, reliable, and built to last.
+            </p>
+        </section>
+
+        <!-- Mission & Vision -->
+        <section>
+            <h2>Our Mission &amp; Vision</h2>
+            <div class="values-grid">
+                <div class="value-card">
+                    <h3>🎯 Our Mission</h3>
+                    <p>
+                        To empower businesses with dependable solutions that
+                        drive growth, efficiency, and long-term value.
+                    </p>
+                </div>
+                <div class="value-card">
+                    <h3>🔭 Our Vision</h3>
+                    <p>
+                        To be the region's most trusted business enterprise —
+                        known for integrity, innovation, and impact.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Core Values -->
+        <section>
+            <h2>What We Stand For</h2>
+            <div class="values-grid">
+                <div class="value-card">
+                    <h3>🤝 Integrity</h3>
+                    <p>We do what we say, and we say what we do. Honest dealings are our foundation.</p>
+                </div>
+                <div class="value-card">
+                    <h3>⚡ Reliability</h3>
+                    <p>When we commit to a deadline, we meet it. Our clients can count on us.</p>
+                </div>
+                <div class="value-card">
+                    <h3>💡 Innovation</h3>
+                    <p>We look for smarter, faster, and more cost-effective ways to serve our clients.</p>
+                </div>
+                <div class="value-card">
+                    <h3>🌍 Community</h3>
+                    <p>We believe business success should benefit the people and places around us.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team -->
+        <section>
+            <h2>Meet the Team</h2>
+            <div class="team-grid">
+                <div class="team-card">
+                    <img src="https://placehold.co/200x200/0b3d91/ffffff?text=CH" alt="Clinton Hamisi, Founder and CEO">
+                    <h3>Clinton Hamisi</h3>
+                    <p class="role">Founder &amp; CEO</p>
+                </div>
+                <div class="team-card">
+                    <img src="https://placehold.co/200x200/0b3d91/ffffff?text=TA" alt="Team member">
+                    <h3>Team Member</h3>
+                    <p class="role">Operations Manager</p>
+                </div>
+                <div class="team-card">
+                    <img src="https://placehold.co/200x200/0b3d91/ffffff?text=TB" alt="Team member">
+                    <h3>Team Member</h3>
+                    <p class="role">Client Relations Lead</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="cta">
+            <h2>Ready to Work With Us?</h2>
+            <p>Let's talk about how Radar Business Enterprise can support your next project.</p>
+            <a class="button" href="contact.html">Get in Touch</a>
+        </section>
+
+    </main>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="site-footer">
+        <p>&copy; 2026 Radar Business Enterprise. All rights reserved.</p>
+        <p>
+            <a href="index.html">Home</a> ·
+            <a href="about.html">About</a> ·
+            <a href="projects.html">Services</a> ·
+            <a href="contact.html">Contact</a>
+        </p>
+    </footer>
+
+</body>
+</html>
