@@ -27,3 +27,8 @@ Week 1 Web Foundations portfolio project
 
 **Clinton Hamisi**
 - GitHub: @Hamisi254IYF (https://github.com/Hamisi254IYF)
+
+## 📝 Technical Article
+I wrote about semantic HTML and accessibility on Dev.to:
+
+🔗 **[Semantic HTML & Accessibility: What I Learned Auditing My Own Portfolio](PASTE-YOUR-DEV-TO-URL-HERE)**
