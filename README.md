@@ -31,4 +31,4 @@ Week 1 Web Foundations portfolio project
 ## 📝 Technical Article
 I wrote about semantic HTML and accessibility on Dev.to:
 
-🔗 **[Semantic HTML & Accessibility: What I Learned Auditing My Own Portfolio](PASTE-YOUR-DEV-TO-URL-HERE)**
+🔗 **[Semantic HTML & Accessibility: What I Learned Auditing My Own Portfolio](https://dev.to/hamisi254iyf/semantic-html-accessibility-what-i-learned-auditing-my-own-portfolio-5ggg)
